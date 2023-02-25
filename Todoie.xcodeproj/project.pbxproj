@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		A45E21CF29A9E65800550811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45E21CD29A9E65800550811 /* Main.storyboard */; };
 		A45E21D129A9E65B00550811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45E21D029A9E65B00550811 /* Assets.xcassets */; };
 		A45E21D429A9E65B00550811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45E21D229A9E65B00550811 /* LaunchScreen.storyboard */; };
+		BCE756E2E0E6645A1C48AF38 /* Pods_Todoie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C216ED781C0B4FAF668A2F4A /* Pods_Todoie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C12B0A3B0B6F71DECBE4B3A /* Pods-Todoie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoie.release.xcconfig"; path = "Target Support Files/Pods-Todoie/Pods-Todoie.release.xcconfig"; sourceTree = "<group>"; };
 		A45E21C429A9E65800550811 /* Todoie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45E21C729A9E65800550811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45E21C929A9E65800550811 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A45E21D029A9E65B00550811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45E21D329A9E65B00550811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A45E21D529A9E65B00550811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C216ED781C0B4FAF668A2F4A /* Pods_Todoie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE17C74629F0A6649E48608 /* Pods-Todoie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoie.debug.xcconfig"; path = "Target Support Files/Pods-Todoie/Pods-Todoie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE756E2E0E6645A1C48AF38 /* Pods_Todoie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EE8DB953E91F7A7012937D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C216ED781C0B4FAF668A2F4A /* Pods_Todoie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A45E21BB29A9E65800550811 = {
 			isa = PBXGroup;
 			children = (
 				A45E21C629A9E65800550811 /* Todoie */,
 				A45E21C529A9E65800550811 /* Products */,
+				C53AA2610A8A0530FEAAB10D /* Pods */,
+				4EE8DB953E91F7A7012937D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = Todoie;
 			sourceTree = "<group>";
 		};
+		C53AA2610A8A0530FEAAB10D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEE17C74629F0A6649E48608 /* Pods-Todoie.debug.xcconfig */,
+				7C12B0A3B0B6F71DECBE4B3A /* Pods-Todoie.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A45E21D829A9E65B00550811 /* Build configuration list for PBXNativeTarget "Todoie" */;
 			buildPhases = (
+				5A3CEBE946F1B1DB52C6553E /* [CP] Check Pods Manifest.lock */,
 				A45E21C029A9E65800550811 /* Sources */,
 				A45E21C129A9E65800550811 /* Frameworks */,
 				A45E21C229A9E65800550811 /* Resources */,
+				69A304ED2ABDF9D379F7E50C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = A45E21BF29A9E65800550811 /* Build configuration list for PBXProject "Todoie" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A3CEBE946F1B1DB52C6553E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todoie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69A304ED2ABDF9D379F7E50C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todoie/Pods-Todoie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Todoie/Pods-Todoie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Todoie/Pods-Todoie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A45E21C029A9E65800550811 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A45E21D929A9E65B00550811 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE17C74629F0A6649E48608 /* Pods-Todoie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		A45E21DA29A9E65B00550811 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C12B0A3B0B6F71DECBE4B3A /* Pods-Todoie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
